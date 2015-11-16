@@ -1,0 +1,22 @@
+<head>
+  <title>Business Casual</title>
+  <!-- Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!-- The following two lines appear in every template and are basically only the header.
+  To avoid redundancy, I put it here. You could even put in in a separate template - see next footer.html -->
+  <div class="brand">Business Casual</div>
+  <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+  <!-- I created an extra template just for the navigation - this is useful if you have a lot of code that repeats itself alot
+  that would be the case, if the navigation would be in every single template -->
+  {{> navigation}}
+  <div id="content" class="container">
+    <!-- This is the place the rendere renders the content from the route -->
+    {{> Template.dynamic template=content}}
+  </div>
+
+  {{> footer}}
+</body>
